@@ -1,0 +1,93 @@
+.header h2 {
+    text-align: center;
+    margin: 30px 0 40px 0;
+    font-size: 36px;
+}
+
+body {
+  font-family: 'Lucida Grande',
+ 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3',Meiryo, メイリオ, sans-serif;
+  font-weight: 300;
+  background-repeat: repeat;
+  padding: 10px 10px 10px 10px;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 20px auto 20px auto;
+}
+
+.navigation {
+    width: 100%;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+}
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navigation ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: bold;
+}
+
+#connectwithme ul li {
+    display: inline-block;
+    margin: 0 5px;;
+    font-size:8px;
+}
+
+h1 {
+	text-align: center;
+	margin: 30px 0px 40px 0px;
+	font-size:28px;
+}
+.right {
+    width: 220px;
+    height: 1000px;
+    float: right;
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+#profile{
+	margin-top: 50px;
+
+}
+.right p{
+	font-size:12px;
+	text-align:center;
+
+}
+.right .sidebarPhotos {
+    margin-top: 20px;
+    padding:0 1px;
+    float: left;
+    width: 100%;
+}
+.right .sidebarPhotos a img {
+    width: 88px;
+    padding: 8px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+}
+.right .sidebarPhotos li {
+	display: inline-block;
+}
+
+img {
+	/*width: 50%;*/
+	 width: 150px;
+}
+#pic {
+	/*place my photo at the center*/
+	text-align: center;
+}
+
+.left{
+	width:650px;
+    margin-top: 50px;
+    height: 1000px;
+}
