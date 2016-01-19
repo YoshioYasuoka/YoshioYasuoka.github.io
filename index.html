@@ -2,96 +2,172 @@
 <html>
 <head>
   <title>Yoshio Yasuoka, MBA candidate</title>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="style2.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buyflix</title>
+  <!-- Bootstrap and jQuery -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- My own styles -->
+  <link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="wrapper">
+  <div class="container">
     <div class="header">
       <h1>Yoshio Yasuoka</h1>
     </div>
     <!-- navigation  -->
-    <div class="navigation">
-      <ul>
-        <li><a href="">home</a></li>
-        <li><a href="">blog</a></li>
-        <li><a href="">photos</a></li>
-        <li><a href="">profile</a></li>
-      </ul>
-    </div>
-    <!-- right block  --> 
-    <div class="right">
-      <div id="profile">
-        <div class="avatar">
-          <p id="pic">
-            <img src="yyn562.jpg">
-          </p>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">dd</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
         </div>
-        <div class="description">
-          <p>
-            MBA Candidate, Class of 2016</br>
-            Kellogg School of Management</br>
-            Northwestern University
-          </p>        
-        </div>
-        <div id="connectwithme">
-          <ul>
-            <li><a href="mailto:yyasuoka2017@kellogg.northwestern.edu">Email</a></li>
-            <li><a href="http://facebook.com/yoshioyasuoka">Facebook</a></li>
-            <li><a href="http://twitter.com/yoshioyasuoka">Twitter</a></li>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">home<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Works<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">About</a></li>
           </ul>
+          <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="row">
+      <div id="wrapper">
+        <!-- left block  --> 
+        <div class="col-md-3">
+          <div class="left">
+            <div class="recentpost">
+              <p>Recent Posts</p>
+              <ul>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx<br></br></li>
+              </ul>
+            </div>
+            <div class="recentcomment">
+              <p>Recent Comments</p>
+              <ul>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx</li>
+                <li>xxx xxx<br></br></li>
+              </ul>
+            </div>
+            <div class="Archive">
+              <p>Archive</p>
+                <ul>
+                  <li>November 2015</li>
+                  <li>December 2015</li>
+                  <li>January 2016</li>
+                </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="FacebookPhotos">
-        <div id="sidebarPhotosTitle">
-          <a>photos</a>
+        <!-- middle block  --> 
+        <div class="col-md-6">
+          <div class="middle">
+            <h4 id="WorkingExperience">Working Experience</h4>
+              <p>
+                Yoshio studied at Waseda University majoring in Architecture. Prior to Kellogg, Yoshio worked for a consulting firm for 3.5 years and then founded his own consulting firm. Most recently he worked for PwC as a consultant, an auditor and an intra-company consultant.<br></br>
+              </p>
+            <h4>Position</h4>
+              <h5>Senior Associate, PwC</h5>
+              <p>PwC is a global accounting firm providing professional services to companies all around the world.</p>
+              <h5>Founder, Yasuoka consulting</h5>
+              <p>Yasuoka consulting provided organaizational and marketing advisory services for mainly SMEs in Japan.<br></br></p>
+            <h4 class="unicorns">Skills</h4>
+            <ul>
+              <li>Finance</li>
+              <li>Accounting<br></br></li>
+            </ul>
+            <h4 class="unicorns">Hobbies</h4>
+            <ul>
+              <li>Manga</li>
+            </ul>
+          </div>
         </div>
-          <ul class="sidebarPhotos">
-              <li>
-                <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xlf1/v/t1.0-9/11951987_10153042118256109_1759324151344278889_n.jpg?oh=df0705657b44f6bdff734935f965935d&oe=57116261"></a>
-                <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10421273_4509494735144_4772320317228679426_n.jpg?oh=672ad73c4e118fe060114bdd35a781c5&oe=56FD5EEC"></a>
-                <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11811582_839365466178032_7072643281624502292_n.jpg?oh=dece36f6dfd98c9ff26bb891f6bbd3a0&oe=570EC3BC"></a>
-                <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xat1/t31.0-8/11895002_10206617090678840_2419621015264956162_o.jpg"></a>
-              </li>
-          </ul>
+        <!-- right block  --> 
+        <div class="col-xs-3">       
+          <div id="profile">
+            <div class="avatar">
+              <p id="pic">
+                <img src="yyn562.jpg">
+              </p>
+            </div>
+            <div class="description">
+              <p>
+                MBA Candidate, Class of 2016</br>
+                Kellogg School of Management</br>
+                Northwestern University
+              </p>   
+            </div>
+            <div class="connectwithme">
+              <ul>
+                <li><a href="mailto:yyasuoka2017@kellogg.northwestern.edu"><i class="fa fa-envelope-o"></i></a></li>
+                <li><a href="http://facebook.com/yoshioyasuoka"><i class="fa fa-facebook-official"></i></a></li>
+                <li><a href="http://twitter.com/yoshioyasuoka"><i class="fa fa-twitter"></i></a></li>
+              </ul>     
+            </div>
+          </div>
+          <div id="FacebookPhotos">
+            <div id="sidebarPhotosTitle">
+              <p>photos</p>
+            </div>
+              <ul class="sidebarPhotos">
+                  <li>
+                    <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xlf1/v/t1.0-9/11951987_10153042118256109_1759324151344278889_n.jpg?oh=df0705657b44f6bdff734935f965935d&oe=57116261"></a>
+                    <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xfa1/v/t1.0-9/10421273_4509494735144_4772320317228679426_n.jpg?oh=672ad73c4e118fe060114bdd35a781c5&oe=56FD5EEC"></a>
+                    <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xaf1/v/t1.0-9/11811582_839365466178032_7072643281624502292_n.jpg?oh=dece36f6dfd98c9ff26bb891f6bbd3a0&oe=570EC3BC"></a>
+                    <a href=""><img src="https://scontent.ford1-1.fna.fbcdn.net/hphotos-xat1/t31.0-8/11895002_10206617090678840_2419621015264956162_o.jpg"></a>
+                  </li>
+              </ul>
+          </div>
+        </div>
       </div>
     </div>
 
+
+
     
-    <!-- left block  --> 
-    <div class="left">
-      <div>
-        <h4 id="WorkingExperience">Working Experience</h4>
-        <p>
-          Yoshio studied at Waseda University majoring in Architecture. Prior to Kellogg, Yoshio worked for a consulting firm for 3.5 years and then founded his own consulting firm. Most recently he worked for PwC as a consultant, an auditor and an intra-company consultant. 
-        </p>
-      </div>
-      <div>
-        <h4>Position</h4>
-        <div>
-          <h5>Senior Associate, PwC</h5>
-          <p>PwC is a global accounting firm providing professional services to companies all around the world.</p>
-        </div>
-        <div>
-          <h5>Founder, Yasuoka consulting</h5>
-          <p>Yasuoka consulting provided organaizational and marketing advisory services for mainly SMEs in Japan.</p>
-        </div>
-      </div>
-      <div>
-        <h4 class="unicorns">Skills</h4>
-        <ul>
-          <li>Finance</li>
-          <li>Accounting</li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="unicorns">Hobbies</h4>
-        <ul>
-          <li>Manga</li>
-        </ul>
-      </div>
-    <div>
+
   </div>
 </body>
 </html>
