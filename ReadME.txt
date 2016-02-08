@@ -1,0 +1,1 @@
+yoshioyasuoka.com
